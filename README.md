@@ -9,7 +9,7 @@ Development of Fine Grained Spatial Resolution (ZCTA Level) for an Integrated HI
 
 Data Source: 
 
-* Region-wide moratlity rates taken from California Department of Public Health ([CDPH](http://https://www.cdph.ca.gov/Programs/CHSI/Pages/Data-and-Statistics-.aspx)) Statistic Vitals: ***/01_Data Preparation/00_Data sets/01_RegionwideMortalityRate_SACOG.csv***
+* Region-wide moratlity rates taken from California Department of Public Health ([CDPH](http://https://www.cdph.ca.gov/Programs/CHSI/Pages/Data-and-Statistics-.aspx)) Statistic Vitals: ***/01_Data Preparation/00_Data/01_RegionwideMortalityRate_SACOG.csv***
 
 * Population at ZCTA level taken from [2010 Decennial Census.](https://www.census.gov/programs-surveys/decennial-census/decade.2010.html)
 
@@ -17,7 +17,7 @@ Data Source:
 
 Data Source: 
 
-* Region-wide baseline traffic injury taken from Internet Statewide Integrated Traffic Records System ([SWITRS](https://www.chp.ca.gov/programs-services/services-information/switrs-internet-statewide-integrated-traffic-records-system)) and Transportation Injury Mapping System ([TIMS](https://tims.berkeley.edu)): ***/01_Data Preparation/00_Data sets/02_RegionWide_BaselineInjury.csv***
+* Region-wide baseline traffic injury taken from Internet Statewide Integrated Traffic Records System ([SWITRS](https://www.chp.ca.gov/programs-services/services-information/switrs-internet-statewide-integrated-traffic-records-system)) and Transportation Injury Mapping System ([TIMS](https://tims.berkeley.edu)): ***/01_Data Preparation/00_Data/02_RegionWide_BaselineInjury.csv***
 
 ### Core functions ###
 
