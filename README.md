@@ -31,9 +31,9 @@ Data Source:
 
 Data Source: 
 
-* Overlap between ZCTA and TAZ from ArcGIS:***/02_Data Preparation/03_Intersection-TAZ2ZIP.dbf***
+* Overlap between ZCTA and TAZ from ArcGIS: ***/02_Data Preparation/03_Intersection-TAZ2ZIP.dbf***
 
-* SACOG TAZ file:***/02_Data Preparation/04_SACOG-TAZ.dbf***
+* SACOG TAZ file: ***/02_Data Preparation/04_SACOG-TAZ.dbf***
 
 * ZCTA list for SACOG region:***02_Data Preparation/05_zcta_list_SACOG***
 
