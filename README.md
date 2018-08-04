@@ -3,12 +3,6 @@ Development of Fine Grained Spatial Resolution (ZCTA Level) for an Integrated HI
 
 ## Source code ##
 
-### Core functions ###
-
-1. Physical activity module: ***/02_Core Functions/01_Functions_PA_PhaseII.R***
-
-2. Traffic injury module: ***/02_Core Functions/02_Functions_TI_PhaseII.R***
-
 ### Data preparation ###
 
 #### 1. Population and mortality at ZCTA level: ***/01_Data Preparation/01_Population+Mortality_zcta_level.R***
@@ -26,3 +20,9 @@ Data Source:
 
 Region-wide baseline traffic injury taken from Internet Statewide Integrated Traffic Records System ([SWITRS](https://www.chp.ca.gov/programs-services/services-information/switrs-internet-statewide-integrated-traffic-records-system)): 
 ***/01_Data Preparation/00_Data sets/02_RegionWide_BaselineInjury.csv***
+
+### Core functions ###
+
+1. Physical activity module: ***/02_Core Functions/01_Functions_PA_PhaseII.R***
+
+2. Traffic injury module: ***/02_Core Functions/02_Functions_TI_PhaseII.R***
