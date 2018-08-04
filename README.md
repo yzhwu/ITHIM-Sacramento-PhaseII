@@ -18,5 +18,5 @@ Data Source:
 Region-wide moratlity rates taken from California Department of Public Health ([CDPH](http://https://www.cdph.ca.gov/Programs/CHSI/Pages/Data-and-Statistics-.aspx)) Statistic Vitals: 
 ***/01_Data Preparation/00_Data sets/RegionwideMortalityRate_SACOG.csv***
 
-Population at ZCTA level taken from [2010 Census](https://www.census.gov/programs-surveys/decennial-census/decade.2010.html)
+Population at ZCTA level taken from [2010 Decennial Census.](https://www.census.gov/programs-surveys/decennial-census/decade.2010.html)
 
