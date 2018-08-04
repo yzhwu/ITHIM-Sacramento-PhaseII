@@ -18,7 +18,7 @@ Population at ZCTA level taken from [2010 Decennial Census.](https://www.census.
 
 Data Source: 
 
-Region-wide baseline traffic injury taken from Internet Statewide Integrated Traffic Records System ([SWITRS](https://www.chp.ca.gov/programs-services/services-information/switrs-internet-statewide-integrated-traffic-records-system)): 
+Region-wide baseline traffic injury taken from Internet Statewide Integrated Traffic Records System ([SWITRS](https://www.chp.ca.gov/programs-services/services-information/switrs-internet-statewide-integrated-traffic-records-system)) and Transportation Injury Mapping System ([TIMS](https://tims.berkeley.edu)): 
 ***/01_Data Preparation/00_Data sets/02_RegionWide_BaselineInjury.csv***
 
 ### Core functions ###
