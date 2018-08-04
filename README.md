@@ -27,7 +27,7 @@ Data Source:
 
 #### 3. Data process for [SACSIM15](http://www.sacog.org/sites/main/files/file-attachments/plnrscmte_sacog_travel_model_wkshp_27mar2014.pdf): ***/02_Data Preparation/03_DataProcess_SACSIM_PhaseII.R***
 
-#### 4. Allocation of TAZs into ZCTAs:***/02_Data Preparation/03_DataProcess_SACSIM_PhaseII.R***
+#### 4. Allocation of TAZs into ZCTAs: ***/02_Data Preparation/03_DataProcess_SACSIM_PhaseII.R***
 
 Data Source: 
 
