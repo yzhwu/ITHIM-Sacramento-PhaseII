@@ -35,6 +35,6 @@ Data Source:
 
 * SACOG TAZ file: ***/02_Data Preparation/04_SACOG-TAZ.dbf***
 
-* ZCTA list for SACOG region:***02_Data Preparation/05_zcta_list_SACOG***
+* ZCTA list for SACOG region:***02_Data Preparation/05_zcta_list_SACOG.csv***
 
 
