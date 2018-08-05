@@ -4,7 +4,7 @@
 # Purpose: Functions for calculating the estimated change of health burden related to traffic injury
 
 # set working directory
-setwd("/Users/Yizheng/Documents/02_Work/17_ITHIM-Phase II/06_R scripts/GitHub/01_Core Functions")
+setwd("/Users/Yizheng/Documents/02_Work/17_ITHIM-Phase II/06_R Scripts/01_Core functions")
 
 # Structure:
 # Part 1: Read External Data Sources and Define Parameter
@@ -96,6 +96,8 @@ createBaselineInjury <- function(injury){
   return(injury.baseline)
 }
 
+
+
 # Function of create the Distribution of Person & Vehicle Distance by Road Types
 # create the sheet "Dist by road type" in ITHIM spreadsheet 
 createScenarioInjuryMultiplier <- function(zctaID,scenarioID){
@@ -177,18 +179,24 @@ createScenarioInjuryMultiplier <- function(zctaID,scenarioID){
       # for one party collisions
       scenario.multiplier[[k]][i,7]<- 
         (dist$distance.scenario.person[i,k]/dist$distance.baseline.person[i,k])^victim.safety*speed.safety*other
+      scenario.multiplier[[k]][i,7] <- replace(scenario.multiplier[[k]][i,7],is.nan(scenario.multiplier[[k]][i,7]),1)
+      scenario.multiplier[[k]][i,7] <- replace(scenario.multiplier[[k]][i,7],is.infinite(scenario.multiplier[[k]][i,7]),1)
       
       for (j in 1:6){ #striking vehicle mode
         scenario.multiplier[[k]][i,j] <- 
           (dist$distance.scenario.person[i,k]/dist$distance.baseline.person[i,k])^victim.safety*(dist$distance.scenario.vehicle[j,k]/dist$distance.baseline.vehicle[j,k])^str.veh.safety.RR*speed.safety*other
+        scenario.multiplier[[k]][i,j] <- replace(scenario.multiplier[[k]][i,j],is.nan(scenario.multiplier[[k]][i,j]),1)
+        scenario.multiplier[[k]][i,j] <- replace(scenario.multiplier[[k]][i,j],is.infinite(scenario.multiplier[[k]][i,j]),1)
         
       }
+      
     }
   }
   return(
     scenario.multiplier = scenario.multiplier)
   
 }
+
 
 # Part 4 Function Definition - Compute Scenario Injury and final injury results --------------------------------------------------
 
@@ -229,6 +237,7 @@ createInjuryResults <- function(zctaID,scenarioID){
                         total.injury.scenario[[2]]+total.injury.scenario[[3]])/
     (total.injury.baseline[[1]]+total.injury.baseline[[2]]+total.injury.baseline[[3]])
   
+  
   # compute the relative risk of serious injuries
   RR.serious <-(total.injury.scenario[[4]]+total.injury.scenario[[5]]+total.injury.scenario[[6]])/
     (total.injury.baseline[[4]]+total.injury.baseline[[5]]+total.injury.baseline[[6]])
@@ -242,7 +251,7 @@ createInjuryResults <- function(zctaID,scenarioID){
   Reduction.yll.disaggr <- matrix(GBD.temp[,2]*(1-RR.fatality),16,1)
   
   Reduction.yld.disaggr <- matrix(GBD.temp[,3]*(1-RR.serious),16,1)
-  
+ 
   Reduction.DALYs.disaggr <- Reduction.yll.disaggr+Reduction.yld.disaggr
   
   return(list(
@@ -262,10 +271,15 @@ computeAgeStdOutput.injury <- function(zctaID,scenario){
   death.age.gender <- scenario$Reduction.Death.disaggr/matrix(
     cbind(Pop.file[((9*zctaID-8):(9*zctaID-1)),1],
           Pop.file[((9*zctaID-8):(9*zctaID-1)),2]),16,1)*100000
+  death.age.gender <- replace(death.age.gender,is.na(death.age.gender),0)
+  
   
   DALYs.age.gender <- scenario$Reduction.DALYs.disaggr/matrix(
     cbind(Pop.file[((9*zctaID-8):(9*zctaID-1)),1],
           Pop.file[((9*zctaID-8):(9*zctaID-1)),2]),16,1)*100000
+  DALYs.age.gender <- replace(DALYs.age.gender,is.na(DALYs.age.gender),0)
+  
+  
   
   age.std.death <- sum(death.age.gender * US.pop)/sum(US.pop)
   
@@ -306,8 +320,5 @@ write.csv(format.output.abs.change.death,file = "absolute change of deaths from 
 write.csv(format.output.abs.change.DALYs,file = "absolute change of DALYs from TI.csv")
 write.csv(format.output.age.std.change.death,file = "age standardized change of deaths from TI.csv")
 write.csv(format.output.age.std.change.DALYs,file = "age standardized change of DALYs from TI.csv")
-
-
-
 
 
