@@ -5,7 +5,7 @@ library(foreign)
 options(scipen = 100)
 
 # Set working drectory
-setwd("/Users/Yizheng/Documents/02_Work/17_ITHIM-Phase II/06_R Scripts/01_Data Preparation/00_Data Sets")
+setwd("/Users/Yizheng/Documents/02_Work/17_ITHIM-Phase II/06_R Scripts/GitHub/02_Data Preparation/00_Data")
 
 # input the zcta ID
 zcta.list <- read.csv("zcta_list_SACOG.csv")

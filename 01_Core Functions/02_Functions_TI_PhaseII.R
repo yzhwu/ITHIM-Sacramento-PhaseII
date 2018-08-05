@@ -4,7 +4,7 @@
 # Purpose: Functions for calculating the estimated change of health burden related to traffic injury
 
 # set working directory
-setwd("/Users/Yizheng/Documents/02_Work/17_ITHIM-Phase II/06_R Scripts/02_Main functions")
+setwd("/Users/Yizheng/Documents/02_Work/17_ITHIM-Phase II/06_R scripts/GitHub/01_Core Functions")
 
 # Structure:
 # Part 1: Read External Data Sources and Define Parameter

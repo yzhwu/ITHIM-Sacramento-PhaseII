@@ -11,7 +11,7 @@ library(foreign)
 set.seed(2018)
 
 # set your working directory
-setwd("/Users/Yizheng/Documents/02_Work/17_ITHIM-Phase II/06_R Scripts/01_Data Preparation/03_Other R scripts")
+setwd("/Users/Yizheng/Documents/02_Work/17_ITHIM-Phase II/06_R Scripts/02_Data Preparation/03_Other R scripts")
 
 # arcgis output: TAZ info include area
 SACOG.TAZ <- read.dbf("FROM GIS/SACOG-TAZ.dbf")

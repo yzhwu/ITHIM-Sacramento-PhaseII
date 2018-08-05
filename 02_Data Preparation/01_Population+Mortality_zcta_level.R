@@ -12,7 +12,7 @@ library(tigris)
 
 options(tigris_use_cache = TRUE, tigris_class="sf")
 
-setwd("/Users/Yizheng/Documents/02_Work/17_ITHIM-Phase II/06_R Scripts/01_Data Preparation/00_Data Sets")
+setwd("/Users/Yizheng/Documents/02_Work/17_ITHIM-Phase II/06_R Scripts/GitHub/02_Data Preparation/00_Data")
 
 
 ################# extract the population file at zcta level from census #####################################
