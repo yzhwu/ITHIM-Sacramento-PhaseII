@@ -320,5 +320,3 @@ write.csv(format.output.abs.change.death,file = "absolute change of deaths from 
 write.csv(format.output.abs.change.DALYs,file = "absolute change of DALYs from TI.csv")
 write.csv(format.output.age.std.change.death,file = "age standardized change of deaths from TI.csv")
 write.csv(format.output.age.std.change.DALYs,file = "age standardized change of DALYs from TI.csv")
-
-

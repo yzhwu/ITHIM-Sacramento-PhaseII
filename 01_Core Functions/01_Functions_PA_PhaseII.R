@@ -661,7 +661,3 @@ format.output.age.std.change.DALYs <- cbind(age.std.change$AgeStdDALYs.matrix.20
 colnames(format.output.abs.change.DALYs) <- c("2020","2027","2036","S1","S2","S3")
 
 write.csv(format.output.abs.change.DALYs,file = "age standardized change of DALYs from PA.csv")
-
-
-
-
