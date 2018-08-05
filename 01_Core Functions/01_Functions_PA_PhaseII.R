@@ -4,7 +4,7 @@
 # Purpose: Functions for calculating the estimated change of health burden related to physical activity
 #         at ZCTA level (Phase II finer scale)
 
-setwd("/Users/Yizheng/Documents/02_Work/17_ITHIM-Phase II/06_R Scripts/01_Core functions")
+setwd("/Users/Yizheng/Documents/02_Work/17_ITHIM-Phase II/06_R Scripts/GitHub/01_Core functions")
 
 # Structure:
 # Part 1: Function Definition - Data Inputs
